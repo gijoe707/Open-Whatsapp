@@ -3,8 +3,21 @@
 <head>
     <script>
         function myFunction() {
-            pno = document.getElementById('pno').value
-            window.open("https://wa.me/91" + pno)
+            prefix=91
+            pno = document.getElementById('pno').value;
+            pno=pno.replace(/\s/g, '');
+            pno_len=pno.length;
+            if(pno_len==10){
+                pno=prefix+pno
+            }
+            else if(pno_len==12){
+                pno=pno;
+            }
+            else{
+                alert("Wrong phone format. Check number")
+                return
+            }
+            window.open("https://wa.me/" + pno.replace(' ','').trim());
         }
     </script>
 </head>
@@ -21,11 +34,13 @@
     margin-bottom:auto;
     text-align:center;
     vertical-align: middle;
-    padding-top:12%;
+    padding-top:1%; 
     ">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/ym/r/36B424nhiL4.svg"/>
         <label for="pno">Phone Number</label>
         <input type="text" id="pno" l>
         <button onclick="myFunction()">Open in WhatsApp</button>
+
     </div>
 </body>
 
