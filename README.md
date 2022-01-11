@@ -8,4 +8,4 @@ After opening the page, enter the WhatsApp number in the text box and click on "
 
 This helps to chat with other WhatsApp users without saving the number to the phone contacts.
 
-Live code can be viewed here http://wa-me.gnuz.in/ and http://gnuz.infinityfreeapp.com
+Live code can be viewed here http://wa-me.gnuz.in/
